@@ -1,0 +1,47 @@
+.App {
+	min-height: 300px;
+	width: 500px;
+	background-color: white;
+	border-radius: 50px;
+	margin: 5% auto;
+	padding-bottom: 2rem;
+	@media screen and (max-width: 550px) {
+		width: 330px;
+		border-radius: 40px;
+		margin-top: 5rem;
+	}
+	&__heading {
+		background-color: #5154a1;
+		color: white;
+		text-align: center;
+		margin-top: 6%;
+		font-weight: 500;
+	}
+	&__list {
+		background-color: inherit;
+		margin: 15px 0px 30px 20px;
+		list-style-type: none;
+	}
+	&__deleteAll {
+		background-color: inherit;
+		display: flex;
+		justify-content: center;
+		align-items: baseline;
+		border-radius: 50%;
+		&__btn {
+			background-color: #5154a1;
+			color: white;
+			text-align: center;
+			border: none;
+			border-radius: 50px;
+			width: 200px;
+			min-width: 30px;
+			font-size: 18px;
+			padding: 8px 0px;
+			cursor: pointer;
+			&:hover {
+				background-color: #5fbdc1;
+			}
+		}
+	}
+}

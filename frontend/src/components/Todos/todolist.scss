@@ -1,0 +1,132 @@
+.list {
+	display: flex;
+	align-items: flex-start;
+	background-color: white;
+	margin-bottom: 10px;
+	width: 97%;
+	&__text {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		background-color: inherit;
+		&__para {
+			font-size: 18px;
+			color: #5154a1;
+			font-weight: 600;
+			background-color: inherit;
+			display: inline;
+			margin-left: 1rem;
+			max-width: 340px;
+			word-wrap: break-word;
+			@media screen and (max-width: 550px) {
+				max-width: 170px;
+			}
+		}
+		&__date {
+			font-size: 15px;
+			color: #5fbdc1;
+			font-weight: 600;
+			background-color: inherit;
+			display: inline;
+			margin-left: 1rem;
+			max-width: 340px;
+			word-wrap: break-word;
+		}
+		&__complete {
+			background-color: inherit;
+			text-decoration: line-through;
+			opacity: 0.7;
+		}
+	}
+	&__icons {
+		display: flex;
+		gap: 5px;
+		margin-left: auto;
+		background-color: inherit;
+		&__delete {
+			background-color: inherit;
+			color: red;
+			border: none;
+			border-radius: 100%;
+			height: 30px;
+			width: 30px;
+			min-width: 30px;
+			font-size: 20px;
+			text-align: center;
+			margin: 0px;
+			&:hover {
+				cursor: pointer;
+			}
+		}
+		&__edit {
+			background-color: inherit;
+			color: #0072e5;
+			margin-right: 5px;
+			&:hover {
+				cursor: pointer;
+			}
+		}
+		&__save {
+			background-color: inherit;
+			color: green;
+			// margin-right: 5px;
+			&:hover {
+				cursor: pointer;
+			}
+		}
+		&__copy {
+			background-color: inherit;
+			color: gray;
+			// margin-right: 5px;
+			&:hover {
+				cursor: pointer;
+			}
+		}
+	}
+	&__checkbox {
+		min-height: 20px;
+		max-height: 20px;
+		min-width: 20px;
+		max-width: 20px;
+		&:hover {
+			cursor: pointer;
+		}
+	}
+}
+
+.edit_list {
+	display: flex;
+	align-items: center;
+	background-color: white;
+	margin-bottom: 10px;
+	width: 97%;
+	&__input_div {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		background-color: white;
+		@media screen and (max-width: 550px) {
+			flex-direction: column;
+			width: 250px;
+		}
+		&__date {
+			margin-left: 1rem;
+			@media screen and (max-width: 550px) {
+				margin-left: 0;
+			}
+			font-size: 16px;
+		}
+		&__input {
+			background-color: white;
+			outline: 0;
+			border-width: 0 0 2px;
+			border-color: #5154a1;
+			height: 40px;
+			text-align: center;
+			font-size: medium;
+			&:focus {
+				border-color: #5fbdc1;
+			}
+		}
+	}
+}
