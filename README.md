@@ -9,3 +9,4 @@ For starting project run the following commands for backend as well as frontend 
 # Live Preview - 
 Frontend is hosted using netlify at `https://zobox.netlify.app`
 Backend is hosted using render at `https://zobox-backend.onrender.com`
+Checkout live preview - https://zobox.netlify.app
